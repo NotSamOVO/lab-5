@@ -19,9 +19,7 @@ public class LogoutController {
      * @param username the username of the user logging in
      */
     public void execute(String username) {
-        final LogoutInputData logoutInputData = new LogoutInputData(
-                username);
-
+        final LogoutInputData logoutInputData = new LogoutInputData(username);
         logoutUseCaseInteractor.execute(logoutInputData);
     }
 }
